@@ -1,0 +1,8 @@
+services:
+  backend:
+    build: .
+    container_name: client-directory-backend
+    ports:
+      - "3737:3737"
+    env_file:
+      - .env.example
