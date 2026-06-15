@@ -1,0 +1,9 @@
+services:
+  frontend:
+    build:
+      context: .
+      args:
+        - VITE_API_URL=http://localhost:3737/api/
+    container_name: client-directory-frontend
+    ports:
+      - "8080:80"
